@@ -1,0 +1,96 @@
+/* Project Details Page */
+.project-details-container {
+    padding: 40px;
+    background: radial-gradient(circle at center, #1b1b2f, #162447, #1f4068);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .project-details {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Project Description */
+  .project-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 20px auto;
+    line-height: 1.8;
+    max-width: 800px;
+  }
+  
+  /* Main Project Image - Make sure it's centered and doesn't overlap */
+  .project-image {
+    max-width: 80%;
+    /* height: 200px; */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;  /* Ensure the image stays in the correct stacking context */
+  }
+  
+  /* Clear any issues with content hiding behind the image */
+  .project-details section {
+    position: relative;
+    z-index: 10;  /* Ensure content is on top of the image */
+  }
+  
+  /* Project Features */
+  .project-features {
+    margin-top: 30px;
+    text-align: left;  /* Align text properly */
+  }
+  
+  /* Key Features Header */
+  .project-features h2 {
+    font-size: 1.5rem;
+    color: #ff0080;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  }
+  
+  .project-features ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .project-features li {
+    margin-bottom: 10px;
+  }
+  
+  /* Code Snippet */
+  .project-features pre {
+    background: #1f1f3f;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff0080, 0 0 15px #8000ff;
+    font-size: 1rem;
+    color: #ccc;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .project-features code {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .neon-text {
+    font-size: 2.5rem;
+    color: #ff0080;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  }
+  
+  /* Ensures the project title is correctly styled */
+  .project-title {
+    font-size: 1.5rem;
+    color: #ff0080;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  }
+  

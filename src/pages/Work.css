@@ -1,0 +1,125 @@
+/* Cyberpunk Theme */
+.work-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px;
+  background: radial-gradient(circle at center, #1b1b2f, #162447, #1f4068, #1b1b2f);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .work-container {
+    flex-direction: row; /* Horizontal layout for larger screens */
+    justify-content: space-between;
+  }
+}
+
+/* Left Panel (Project Index) */
+.project-index {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item {
+  padding: 15px;
+  background: #1f1f3f;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+  transform: translateY(-5px);
+}
+
+.project-item.active {
+  border: 2px solid #ff0080;
+  box-shadow: 0 0 20px #ff0080, 0 0 30px #8000ff;
+}
+
+/* Right Panel (Project Details) */
+.project-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* Project Details Image Styling */
+.selected-project-image {
+  width: 100%; /* Ensure the image scales to fit the container width */
+  max-width: 600px; /* Increase maximum width for larger images */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 16 / 9; /* Ensure a consistent aspect ratio */
+  object-fit: cover; /* Crop the image to fit the container without distortion */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selected-project-image:hover {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+  box-shadow: 0 0 20px #ff0080, 0 0 30px #8000ff;
+}
+
+
+.project-details h2 {
+  font-size: 2rem;
+  color: #ff0080;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+}
+
+.project-details p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.neon-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff0080, #8000ff);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff0080, 0 0 30px #8000ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .work-container {
+    flex-direction: column;
+  }
+
+  .project-index {
+    margin-bottom: 20px;
+  }
+
+  .selected-project-image {
+    width: 90%; /* Adjust image size for smaller screens */
+  }
+
+  .project-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-details p {
+    font-size: 1rem;
+  }
+}

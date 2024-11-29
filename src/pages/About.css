@@ -1,0 +1,221 @@
+/* Cyberpunk Theme */
+.cyberpunk-theme {
+  background: radial-gradient(circle at center, #1b1b2f, #162447, #1f4068, #1b1b2f);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Neon Text */
+.neon-text {
+  font-size: 3rem;
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Timeline Container */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Timeline Content */
+.timeline-content {
+  background: #1f1f3f;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff0080, 0 0 30px #8000ff;
+}
+
+.year {
+  font-size: 2rem;
+  color: #ff0080;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #ff0080, 0 0 10px #8000ff;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Timeline Bars */
+.timeline-bars {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.timeline-slider {
+  width: 100%;
+  margin: 30px 0;
+  padding-top: -5px;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.timeline-slider:focus {
+  outline: none;
+}
+
+/* Slider Thumb */
+.timeline-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff0080, #8000ff);
+  box-shadow: 0 0 10px #ff0080, 0 0 15px #8000ff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.timeline-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Slider Track */
+.timeline-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Years Labels */
+.years {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.years span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Vertical Bars */
+.vertical-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bar {
+  flex: 1;
+  height: 5px;
+  margin: 0 2px;
+  background: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bar.active {
+  background: linear-gradient(135deg, #ff0080, #8000ff);
+  box-shadow: 0 0 5px #ff0080, 0 0 10px #8000ff;
+}
+
+/* Profile Picture */
+.profile-pic {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff0080;
+  box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0080, 0 0 30px #8000ff;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff0080, #8000ff);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .neon-text {
+    font-size: 2rem;
+  }
+
+  .timeline-content {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .year {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .profile-pic img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .social-links a {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

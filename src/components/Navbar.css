@@ -1,0 +1,99 @@
+/* General Navbar Styles */
+.circular-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Neon Circular Background */
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff0080, #8000ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5), 0 0 30px rgba(128, 0, 255, 0.7);
+  position: relative;
+}
+
+/* Individual Navigation Items */
+.nav-item {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1f1f3f;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Position Navigation Items in 120° Around the Circle */
+.nav-item[title="Home"] {
+  transform: rotate(0deg) translate(50px) rotate(0deg);
+}
+
+.nav-item[title="Work"] {
+  transform: rotate(120deg) translate(50px) rotate(-120deg);
+}
+
+.nav-item[title="About"] {
+  transform: rotate(240deg) translate(50px) rotate(-240deg);
+}
+
+/* Hover Effect */
+.nav-item:hover {
+  box-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  transform: scale(1.2);
+}
+
+.nav-item.active {
+  background: #8000ff;
+  box-shadow: 0 0 15px #ff0080, 0 0 25px #8000ff;
+}
+
+/* Glow Effect */
+.neon-glow {
+  box-shadow: 0 0 5px #ff0080, 0 0 10px #8000ff;
+}
+
+.neon-glow:hover {
+  box-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav-item {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .nav-item[title="Home"] {
+    transform: rotate(0deg) translate(40px) rotate(0deg);
+  }
+
+  .nav-item[title="Work"] {
+    transform: rotate(120deg) translate(40px) rotate(-120deg);
+  }
+
+  .nav-item[title="About"] {
+    transform: rotate(240deg) translate(40px) rotate(-240deg);
+  }
+}

@@ -1,0 +1,42 @@
+/* General Cyberpunk Theme */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at center, #1b1b2f, #162447, #1f4068, #1b1b2f);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+}
+
+a {
+  color: #ff0080;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8000ff;
+}
+
+/* Buttons */
+button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff0080, #8000ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0080, 0 0 20px #8000ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff0080, 0 0 30px #8000ff;
+}
